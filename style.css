@@ -1,0 +1,220 @@
+/* Sıfırlama Kodları */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.menu_bar{
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #073f68;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    margin-top: -20px;
+}
+.logo img{
+    height: 100px;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.menu p{
+display: none;
+}
+
+.menu a{
+color: white;
+font-size: 20px;
+text-decoration: none;
+box-sizing: border-box;
+padding: 10px;
+transition: 500ms;
+}
+
+.menu li:hover a{
+    opacity: .5;
+}
+/* Navbar Bitiş */
+
+
+/* Galeri */
+
+.galeri{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/galeri.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galeri .wep{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.galeri a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #073f68;
+    transition: 0.5s;
+}
+
+.galeri a:hover{
+    color: white;
+    opacity: .5;
+    padding: 10px;
+}
+
+.wep h4{
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+/* Galeri Bitiş */
+
+
+
+/* Orta Alan Başlangıç */
+
+.orta_alan{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.orta_alan .orta{
+    width: 22%;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin: 2% 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(52,64,98,0.8), rgba(52,64,98,0.5));
+
+}
+
+.orta_alan .orta .icerik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.orta p{ text-indent: 15px;}
+.orta img{ width: 50%;}
+
+/* Orta Alan Bitiş */
+
+
+/* Alt Alan Başlangıç */
+.alt_alan{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    background-color: #171717;
+
+}
+
+.alt_alan .icerik{
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* Alt Alan Bitiş*/
+
+.sosyal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    font-size: 40px;
+    border-top: 1px solid white;
+    background-color: #171717;
+}
+
+.sosyal a{
+box-sizing: border-box;
+margin: 15px;
+color: white;
+}
+
+
+/* @media Tablet görnümü KOdları */
+@media only screen and (max-width:992px) {
+    .orta_alan{ flex-wrap: wrap;}
+    .orta{ width: 48%;}
+    .orta img{ width: 30%;}
+    
+}
+
+
+
+
+
+/* @media ceptelefonu görnümü KOdları */
+@media only screen and (max-width:778px) {
+    
+    .menu_bar{justify-content: space-between;}
+    .menu_bar .logo{margin-left: 10%;}
+    .menu_bar .menu{ margin-right: 10%;}
+    .menu ul{
+        display: none;
+    }
+    .menu p{
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 15%;
+        margin-top: 50%;
+    }
+
+    .orta_alan .orta{width: 100%;}
+    .orta_alan  .orta .icerik{ flex-direction: row;}
+    .orta_alan  .icerik img, h3, p{ padding: 1%;} 
+
+
+    .alt_alan{height: 50vh;
+    margin-bottom: -20px;}
+
+    .alt_alan .icerik{
+        text-align: center;
+      
+    }
+   .sosyal{
+   height: 25vh;
+   margin-top: 20px;
+}
+}
